@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web Development</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <img style="width:14%; border:none; background:transparent" src="lib/html5.png" />
+            <img style="width:10%; border:none; background:transparent" src="lib/css3.png" />
+            <img style="width:12%; border:none; background:transparent" src="lib/js-logo.png" />
+            <img style="width:15%; border:none; background:transparent" src="lib/reactjs.png" />
+            <img style="width:20%; border:none; background:transparent" src="lib/nodejs-512.png" />
+            <br/><br/><br/>
+            <h2>Web Development</h2>
+            <br/>
+            <p style="font-size:30px"><i><a>"From zero to web developer hero"</a></i></p>
+          </section>
+
+          <section>
+            <img style="width:60%; border:none; background:transparent" src="lib/sap-hybris-logo.png" /><br/><br/>
+            <center>
+              <h3>Hack Your Career</h3><br/>
+              <img style="width:8%; border:none; background:transparent" src="lib/square-facebook-512.png" /> <a style="color:#3b5998">Hack.your.Career</a>
+            </center>
+          </section>
+
+          <section>
+            <h2>Agenda</h2>
+            <ul class="unordered-list">
+              <li><s>04.11 - A brief introduction to modern JavaScript</s></li><br/>
+              <li>18.11 - NodeJS for Dummies</li><br/>
+              <li>25.11 - ReactJS – creating immutable interfaces</li><br/>
+              <li>02.12 - UI Development</li><br/>
+              <li>09.12 - <a>?</a></li>
+            </ul>
+            <aside class="notes">
+              (Microservices, REST, Retrieving data from external sources), (ReactJS, State management, Immutability), (CSS/LESS/SASS, HTML5, RWD).
+            </aside>
+          </section>
+        </section>
+
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h2>Node.js for dummies</h2>
+            <img src="lib/img/writeAllTheCode.jpg" />
+            <div class="authors-footer" style="font-size:30px">
+              <p>Sebastian Domagała</p>
+            </div>
+          </section>
+
+          <section>
+            <h3> Agenda: </h3>
+            <ul>
+              <li class="fragment"> A bit too short introduction of Node </li>
+              <li class="fragment"> What makes it so easy... </li>
+              <li class="fragment"> ...and why you should be careful </li>
+              <li class="fragment"> Beer-as-a-Service </li>
+              <li class="fragment"> Microservices </li>
+
+              <li class="fragment"> Q&A </li>
+            </ul>
+          </section>
+        </section>
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h3> Let's talk Node </h3>
+
+            <p class="fragment"> Did we even need another programming language? </p>
+            <ul>
+              <li class="fragment"> brings event-driven programming to web servers - no need for threading </li>
+              <li class="fragment"> lightweight with non-blocking IO (but we will talk about it later)</li>
+              <li class="fragment"> perfect for microservices </li>
+            </ul>
+            <aside class="notes">
+              - APIs rule - you get functionality from it
+              - Apps nowadays - API consumers, API glue
+              - highly scalable (stateless apps), performant
+              - you want to make it, and you want to make it in a day
+            </aside>
+          </section>
+          <section>
+            <h3> Let's talk Node </h3>
+            <p> <div class="fragment">Why we use only one thread...</div> <div class="fragment"> And why it <b>doesn't</b> matter? </div></p>
+            <img class="fragment" src="lib/img/event-loop.jpg" />
+            <br/>
+            <br/>
+
+            <aside class="notes">
+              - non-blocking IO
+              - multithreading behind the scenes ( by OS )
+            </aside>
+          </section>
+        </section>
+        <section data-background-image="lib/repeatable_pattern_background.jpg">
+          <section>
+            <h2>So... <br/>let's get our hands dirty</h2>
+            <br/>
+            <br/>
+            <img src="lib/img/hack-the-planet.gif" />
+            <aside class="notes">
+              Real life example before we go into details
+            </aside>
+          </section>
+          <section>
+            <h2>Beer-as-a-Service</h2>
+            <blockquote style="font-size: 20px; text-align: center">
+              <p>Not the service we deserved, but the one that we needed</p>
+              <footer style="text-align: right; margin-right: 30px">- some guy from the internet</footer>
+            </blockquote>
+          </section>
+        </section>
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+        <section>
+          <h3>That's all cool and stuff... but why should I learn it? </h3>
+        </section>
+        <section>
+          <h2>Program everything!</h2>
+          <img class="fragment" width="200" height="200" src="lib/img/chrome-logo.jpg" />
+          <img class="fragment" width="200" height="200" src="lib/img/electron-logo.png" />
+          <img class="fragment" width="200" height="200" src="lib/img/react-logo.jpg" />
+          <img class="fragment" width="200" height="200" src="lib/img/cylon-logo.png" />
+        </section>
+        <section>
+          <h2>Community</h2>
+          <a class="fragment" target="_blank" href="http://github.audio">GitHub Audio</a><br />
+          <a class="fragment" target="_blank" href="https://www.npmjs.com/">npm</a>
+        </section>
+      </section>
+      <section data-background-image="lib/repeatable_pattern_background.jpg">
+        <section>
+          <img src="lib/img/thats-all-folks.png" />
+          <h2 class="fragment">Questions?</h2>
+        </section>
+      </section>
+    </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
