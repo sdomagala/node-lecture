@@ -54,7 +54,9 @@
               <li>09.12 - <a>?</a></li>
             </ul>
             <aside class="notes">
-              (Microservices, REST, Retrieving data from external sources), (ReactJS, State management, Immutability), (CSS/LESS/SASS, HTML5, RWD).
+              (Microservices, REST, Retrieving data from external sources)<br/>
+              (ReactJS, State management, Immutability)<br/>
+              (CSS/LESS/SASS, HTML5, RWD)
             </aside>
           </section>
         </section>
@@ -90,11 +92,12 @@
               <li class="fragment"> brings event-driven programming to web servers - no need for threading </li>
               <li class="fragment"> lightweight with non-blocking IO (but we will talk about it later)</li>
               <li class="fragment"> perfect for microservices </li>
+              <li class="fragment"> NPM </li>
             </ul>
             <aside class="notes">
-              - APIs rule - you get functionality from it
-              - Apps nowadays - API consumers, API glue
-              - highly scalable (stateless apps), performant
+              - APIs rule - you get functionality from it<br/>
+              - Apps nowadays - API consumers, API glue<br/>
+              - highly scalable (stateless apps), performant<br/>
               - you want to make it, and you want to make it in a day
             </aside>
           </section>
@@ -106,11 +109,26 @@
             <br/>
 
             <aside class="notes">
-              - non-blocking IO
+              - non-blocking IO<br/>
               - multithreading behind the scenes ( by OS )
             </aside>
           </section>
+          <section>
+          <pre><code>
+  function przygotujPiwo(chmiel, callback) {
+    dodajChmiel(chmiel, function(brzeczka) {
+      const temperatura = '10'; //stopnie Celsjusza
+      schładzajBrzeczke(brzeczka, temperatura, function(schlodzonaBrzeczka) {
+        dodajDrożdżeDoBrzeczki(drożdze, brzeczka, function(piwo) {
+          callback(piwo);
+        });
+      });
+    });
+  });
+          </code></pre>
+          <img height="50%" src="lib/img/event-loop.jpg" />
         </section>
+      </section>
         <section data-background-image="lib/repeatable_pattern_background.jpg">
           <section>
             <h2>So... <br/>let's get our hands dirty</h2>
@@ -118,7 +136,7 @@
             <br/>
             <img src="lib/img/hack-the-planet.gif" />
             <aside class="notes">
-              Real life example,
+              Real life example<br/>
               zawsze lubimy rozmawiac o rzeczach na ktorych sami sie znamy
             </aside>
           </section>
@@ -132,14 +150,15 @@
         </section>
       <section data-background-image="lib/repeatable_pattern_background.jpg">
         <section>
-          <h3>That's all cool and stuff... but why should I learn it? </h3>
+          <h2>Need another reason to learn Node?</h2>
         </section>
         <section>
           <h2>Program everything!</h2>
-          <img class="fragment" width="200" height="200" src="lib/img/chrome-logo.jpg" />
-          <img class="fragment" width="200" height="200" src="lib/img/electron-logo.png" />
-          <img class="fragment" width="200" height="200" src="lib/img/react-logo.jpg" />
-          <img class="fragment" width="200" height="200" src="lib/img/cylon-logo.png" />
+          <img class="fragment" width="150" height="150" src="lib/img/chrome-logo.jpg" />
+          <img class="fragment" width="150" height="150" src="lib/img/node-logo.jpg" />
+          <img class="fragment" width="150" height="150" src="lib/img/electron-logo.png" />
+          <img class="fragment" width="150" height="150" src="lib/img/react-logo.jpg" />
+          <img class="fragment" width="150" height="150" src="lib/img/cylon-logo.png" />
         </section>
         <section>
           <h2>Community</h2>
@@ -149,18 +168,28 @@
         <section>
           <h2> Bright future </h2>
           <ul>
-            <li class="fragment">First stable Node.js release (0.10) - 11 March 2013</li>
-            <li class="fragment">First stable <b>PRODUCTION</b> release (4.0.0) - 08 September 2015</li>
+            <li class="fragment">First stable Node.js release (0.10) - <b>11 March 2013</b></li>
+            <li class="fragment">First stable PRODUCTION release (4.0.0) - <b>08 September 2015</b></li>
 
-            <li class="fragment">First stable React release (0.3.0) - 29 May 2013</li>
+            <li class="fragment">First stable React release (0.3.0) - <b>29 May 2013</b></li>
 
-            <li class="fragment"> First stable Cylon.js release (1.0.0) - 8 April 2015</li>
+            <li class="fragment"> First stable Cylon.js release (1.0.0) - <b>8 April 2015</b></li>
+
+            <li class="fragment"> <b>MICROSERVICES</b> </li>
 
           </ul>
           <aside class="notes">
             - Semver versioning
             - You all can engage
           </aside>
+        </section>
+        <section>
+          <h3>That's all cool and stuff... but what are the things that might go wrong? </h3>
+        </section>
+        <section>
+          <h2>Let's use example:</h2>
+          <a href="https://medium.com/unboxd/how-i-built-an-app-with-500-000-users-in-5-days-on-a-100-server-77deeb238e83">Poke Chat failure</a>
+        </section>
       </section>
       <section data-background-image="lib/repeatable_pattern_background.jpg">
         <section>

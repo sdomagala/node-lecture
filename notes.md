@@ -5,6 +5,7 @@
 - Beer example
 - live coding
 - funny agenda (confusing theory etc.)
+- typescript/coffeescript
 
 ### Pluses of Node (in context of microservices):
 - redeploy one service instead of whole stack
